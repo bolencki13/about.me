@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "standard",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "jest": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "fetch": true
+  }
+}
