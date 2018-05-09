@@ -1,3 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `null`;
+exports[`renders without crashing 1`] = `
+<section
+  className="container"
+  id="bto-about-me"
+>
+  <div
+    className="row h-100"
+  >
+    <div
+      className="col-12 text-center align-self-center"
+    >
+      <img
+        alt="of me"
+        className="rounded"
+        src="https://media.licdn.com/dms/image/C4E03AQFG0iHhtDVSvg/profile-displayphoto-shrink_200_200/0?e=1531353600&v=beta&t=6PWD8arccHJ1qvMoEWNHe1u6_RH21kN2wRTvd-D1Jmo"
+      />
+      <h1>
+        Hi, I'm Brian. I do a number of things.
+      </h1>
+      <ul
+        className="list-inline"
+      >
+        <li
+          className="list-inline-item"
+        >
+          Eagle Scout -
+        </li>
+        <li
+          className="list-inline-item"
+        >
+          Developer -
+        </li>
+        <li
+          className="list-inline-item"
+        >
+          Entrepreneur
+        </li>
+      </ul>
+      <a
+        className="btn btn-dark"
+        href="#projects"
+      >
+        My Projects
+      </a>
+    </div>
+  </div>
+</section>
+`;

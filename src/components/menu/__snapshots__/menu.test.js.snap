@@ -12,7 +12,7 @@ exports[`renders without crashing 1`] = `
       className="navbar-brand"
       href="/"
     >
-      Brian Olencki
+      About Me
     </a>
     <button
       aria-controls="navbarSupportedContent"
