@@ -20,7 +20,7 @@ export default (state = kDefaultState, action) => {
     case kIdentifiers.PROJECTS_GET_END: {
       return {
         ...state,
-        projects: action.payload || [],
+        github: action.payload || [],
         fetching: false,
         error: null
       }

@@ -21,7 +21,7 @@ describe('Projects reducer', () => {
   it(`Should handle ${kIdentifiers.PROJECTS_GET_END}`, () => {
     expect(reducer(initialState, {type: kIdentifiers.PROJECTS_GET_END, payload: [project]})).toEqual({
       ...initialState,
-      projects: [project],
+      github: [project],
       fetching: false,
       error: null
     })
