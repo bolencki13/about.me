@@ -29,7 +29,7 @@ describe('Project Actions', () => {
       }]
       const store = mockStore(kDefaultState)
 
-      return store.dispatch(ProjectActions.all())
+      return store.dispatch(ProjectActions.github())
         .then(() => {
           expect(store.getActions()).toEqual(expectedActions)
         })
@@ -55,7 +55,7 @@ describe('Project Actions', () => {
       }]
       const store = mockStore(kDefaultState)
 
-      return store.dispatch(ProjectActions.all())
+      return store.dispatch(ProjectActions.github())
         .then(() => {
           expect(store.getActions()).toEqual(expectedActions)
         })

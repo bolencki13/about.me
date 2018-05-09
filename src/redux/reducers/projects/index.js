@@ -1,7 +1,7 @@
 import { kIdentifiers } from '../../actions/projects/'
 
 export const kDefaultState = {
-  projects: [],
+  github: [],
   fetching: false,
   error: null
 }

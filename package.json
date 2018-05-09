@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@octokit/rest": "^15.4.0",
     "bootstrap": "^4.1.1",
     "history": "^4.7.2",
     "jquery": "^3.3.1",
+    "moment": "^2.22.1",
     "node-sass-chokidar": "^1.2.2",
     "popper.js": "^1.14.3",
     "react": "^16.3.2",

@@ -10,7 +10,8 @@
     "react"
   ],
   "globals": {
-    "fetch": true
+    "fetch": true,
+    "FormData": true
   },
   "parserOptions": {
       "ecmaVersion": 8,
