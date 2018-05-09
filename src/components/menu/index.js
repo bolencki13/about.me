@@ -6,7 +6,7 @@ export default class Menu extends Component {
     return (
       <nav id="bto-menu" className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand" href="/">Brian Olencki</a>
+          <a className="navbar-brand" href="/">About Me</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

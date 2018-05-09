@@ -8,53 +8,57 @@ exports[`renders without crashing 1`] = `
     className="navbar navbar-expand-lg"
     id="bto-menu"
   >
-    <a
-      className="navbar-brand"
-      href="/"
-    >
-      Brian Olencki
-    </a>
-    <button
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      className="navbar-toggler"
-      data-target="#navbarSupportedContent"
-      data-toggle="collapse"
-      type="button"
-    >
-      <span
-        className="navbar-toggler-icon"
-      />
-    </button>
     <div
-      className="collapse navbar-collapse"
-      id="navbarSupportedContent"
+      className="container"
     >
-      <ul
-        className="navbar-nav mr-auto"
+      <a
+        className="navbar-brand"
+        href="/"
       >
-        <li
-          className="nav-item"
+        Brian Olencki
+      </a>
+      <button
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        className="navbar-toggler"
+        data-target="#navbarSupportedContent"
+        data-toggle="collapse"
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        className="collapse navbar-collapse"
+        id="navbarSupportedContent"
+      >
+        <ul
+          className="navbar-nav mr-auto"
         >
-          <a
-            className="nav-link"
-            href="#projects"
+          <li
+            className="nav-item"
           >
-            Projects
-          </a>
-        </li>
-        <li
-          className="nav-item"
-        >
-          <a
-            className="nav-link"
-            href="https://repo.bolencki13.com/"
+            <a
+              className="nav-link"
+              href="#projects"
+            >
+              Projects
+            </a>
+          </li>
+          <li
+            className="nav-item"
           >
-            Cydia Repo
-          </a>
-        </li>
-      </ul>
+            <a
+              className="nav-link"
+              href="https://repo.bolencki13.com/"
+            >
+              Cydia Repo
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </div>

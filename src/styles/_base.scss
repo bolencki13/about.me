@@ -1,0 +1,11 @@
+@import "./colors";
+
+img {
+  &.rounded {
+    border-radius: 50% !important;
+  }
+}
+
+body {
+  background-color: #f7f7f7;
+}

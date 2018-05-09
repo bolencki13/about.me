@@ -8,6 +8,7 @@
     "history": "^4.7.2",
     "jquery": "^3.3.1",
     "node-sass-chokidar": "^1.2.2",
+    "popper.js": "^1.14.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router": "^4.2.0",

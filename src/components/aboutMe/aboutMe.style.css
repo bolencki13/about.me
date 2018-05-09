@@ -1,0 +1,13 @@
+/* Coolors Exported Palette - coolors.co/36393b-a5d8ff-afd0d6-bfb6bb-c49799 */
+/* HSL */
+/* RGB */
+img.rounded {
+  border-radius: 50% !important; }
+
+body {
+  background-color: #f7f7f7; }
+
+#bto-about-me {
+  height: -webkit-calc(100vh - 72px);
+  height: -moz-calc(100vh - 72px);
+  height: calc(100vh - 72px); }
