@@ -3,6 +3,7 @@
   "description": "Personal website portfolio of bolencki13",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://bolencki13.github.io/about.me",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "history": "^4.7.2",
@@ -29,7 +30,10 @@
     "eject": "react-scripts eject",
     "lint": "./node_modules/.bin/eslint . --fix",
     "sass": "node-sass-chokidar src/ -o src/",
-    "sass:watch": "npm run sass && node-sass-chokidar src/ -o src/ --watch --recursive"
+    "sass:watch": "npm run sass && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "devDependencies": {
     "eslint": "^4.11.0",
@@ -40,6 +44,7 @@
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.1.0",
     "fetch-mock": "^6.3.0",
+    "gh-pages": "^1.1.0",
     "react-test-renderer": "^16.3.2",
     "redux-mock-store": "^1.4.0"
   }
