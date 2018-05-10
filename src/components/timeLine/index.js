@@ -29,6 +29,7 @@ class TimeLine extends Component {
   componentDidMount () {
     this.props.dispatch(ProjectsActions.github())
     this.props.dispatch(ProjectsActions.work())
+    this.props.dispatch(ProjectsActions.school())
   }
 
   cells () {
@@ -55,8 +56,19 @@ class TimeLine extends Component {
           date: `${isoToDate(item.created_at)} - ${item.updated_at === 'present' ? 'Present' : isoToDate(item.updated_at)}`
         }
       })
+    let arySchool = this.props.projects.school
+      .map((item) => {
+        return {
+          id: item.id,
+          title: item.name,
+          details: item.description,
+          location: 'School',
+          created_at: item.created_at,
+          date: `${isoToDate(item.created_at)} - ${item.updated_at === 'present' ? 'Present' : isoToDate(item.updated_at)}`
+        }
+      })
 
-    let aryItems = [...aryGithub, ...aryWork]
+    let aryItems = [...aryGithub, ...aryWork, ...arySchool]
       .sort((a, b) => {
         return new Date(b.created_at) - new Date(a.created_at)
       })

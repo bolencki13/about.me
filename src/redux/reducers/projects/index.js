@@ -3,6 +3,7 @@ import { kIdentifiers } from '../../actions/projects/'
 export const kDefaultState = {
   github: [],
   work: [],
+  school: [],
   fetching: false,
   error: null
 }
@@ -37,6 +38,21 @@ export default (state = kDefaultState, action) => {
       return {
         ...state,
         work: action.payload || [],
+        fetching: false,
+        error: null
+      }
+    }
+    case kIdentifiers.PROJECTS_SCHOOL_START: {
+      return {
+        ...state,
+        fetching: true,
+        error: null
+      }
+    }
+    case kIdentifiers.PROJECTS_SCHOOL_END: {
+      return {
+        ...state,
+        school: action.payload || [],
         fetching: false,
         error: null
       }
