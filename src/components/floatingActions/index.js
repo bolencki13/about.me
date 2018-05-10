@@ -30,7 +30,6 @@ export default class FloatingActions extends Component {
   }
 
   render () {
-    console.log(this.state.fixedActions)
     return (
       <div className={`btn-group-vertical ${this.state.fixedActions ? 'floating-action-fixed' : ''}`} ref={this.floatingActions}>
         <a href="#projects" className="btn btn-green rounded mb-2">Top</a>
