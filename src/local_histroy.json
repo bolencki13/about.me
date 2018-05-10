@@ -1,0 +1,46 @@
+{
+  "work": [
+    {
+      "id": "1",
+      "name": "Apple Genuis Bar",
+      "description": "I diagnosed and fixed iOS devices at the Apple Retail store. I started in sales and was quickly promoted to the Genius bar. Throughout my time working here, I had to help various customers with a number of problems and improved my customer service skills exponentially.",
+      "location": "Work",
+      "created_at" : "2015-12-07T19:46:21Z",
+      "updated_at": "2017-02-21T19:46:21Z"
+    },
+    {
+      "id": "2",
+      "name": "Freelance Software Developer",
+      "description": "I worked for various clients remotely and came across a number of technologies included: iOS, PHP, Python and frontend web work. I was able to keep my clients updated and continue to deliver work on time.",
+      "location": "Work",
+      "created_at" : "2015-01-01T19:46:21Z",
+      "updated_at": "2017-07-01T19:46:21Z"
+    },
+    {
+      "id": "3",
+      "name": "iOS CO-OP Johnson & Johnson",
+      "description": "I have worked on various projects in an agile environment. These team projects have included the use of many frameworks including AWS, Nuance, Medidata, and more. While working here I have gained further knowledge on iOS including Swift and Objective-c.",
+      "location": "Work",
+      "created_at" : "2017-06-17T19:46:21Z",
+      "updated_at": "2017-12-20T19:46:21Z"
+    },
+    {
+      "id": "4",
+      "name": "Founder & CEO Villa Rentals",
+      "description": "At Villa Rentals, we enable landlords to better care for their renters, by equipping them with the best tools, because we believe improving our communities should come first. We provide an online experience for landlords to organize maintenance requests, collect rent, message their renters, and much more.",
+      "location": "Work",
+      "created_at" : "2017-03-01T19:46:21Z",
+      "updated_at": "present"
+    }
+  ],
+  "school": [
+    {
+      "id": "101",
+      "name": "Johnson & Wales University",
+      "description": "I completed an associates degree in Computer Programming and a bachelors degree in Software Engineering.",
+      "location": "Work",
+      "created_at" : "2014-09-01T19:46:21Z",
+      "updated_at": "2017-05-01T19:46:21Z"
+    }
+  ]
+}

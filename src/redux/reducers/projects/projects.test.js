@@ -10,16 +10,16 @@ describe('Projects reducer', () => {
     date: 'Some date_start - some date_end'
   }
 
-  it(`Should handle ${kIdentifiers.PROJECTS_GET_START}`, () => {
-    expect(reducer(initialState, {type: kIdentifiers.PROJECTS_GET_START})).toEqual({
+  it(`Should handle ${kIdentifiers.PROJECTS_GITHUB_START}`, () => {
+    expect(reducer(initialState, {type: kIdentifiers.PROJECTS_GITHUB_START})).toEqual({
       ...initialState,
       fetching: true,
       error: null
     })
   })
 
-  it(`Should handle ${kIdentifiers.PROJECTS_GET_END}`, () => {
-    expect(reducer(initialState, {type: kIdentifiers.PROJECTS_GET_END, payload: [project]})).toEqual({
+  it(`Should handle ${kIdentifiers.PROJECTS_GITHUB_END}`, () => {
+    expect(reducer(initialState, {type: kIdentifiers.PROJECTS_GITHUB_END, payload: [project]})).toEqual({
       ...initialState,
       github: [project],
       fetching: false,

@@ -17,6 +17,7 @@ class TimeLine extends Component {
 
   componentDidMount () {
     this.props.dispatch(ProjectsActions.github())
+    this.props.dispatch(ProjectsActions.work())
   }
 
   cells () {
@@ -28,9 +29,23 @@ class TimeLine extends Component {
           details: item.description,
           location: 'GitHub',
           created_at: item.created_at,
-          date: `${isoToDate(item.created_at)} - ${isoToDate(item.updated_at)}`
+          date: `${isoToDate(item.created_at)} - ${item.updated_at === 'present' ? 'Present' : isoToDate(item.updated_at)}`
         }
       })
+
+    let aryWork = this.props.projects.work
+      .map((item) => {
+        return {
+          id: item.id,
+          title: item.name,
+          details: item.description,
+          location: 'Work',
+          created_at: item.created_at,
+          date: `${isoToDate(item.created_at)} - ${item.updated_at === 'present' ? 'Present' : isoToDate(item.updated_at)}`
+        }
+      })
+
+    let aryItems = [...aryGithub, ...aryWork]
       .sort((a, b) => {
         return new Date(b.created_at) - new Date(a.created_at)
       })
@@ -40,10 +55,11 @@ class TimeLine extends Component {
           <Cell key={item.id} id={item.id} date={item.date} title={item.title} details={item.details}/>
         )
       })
+
     return (
       <div>
         {
-          aryGithub
+          aryItems
         }
       </div>
     )

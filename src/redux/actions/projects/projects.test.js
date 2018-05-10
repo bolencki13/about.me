@@ -10,7 +10,7 @@ describe('Project Actions', () => {
       fetchMock.restore()
     })
 
-    it(`creates ${ProjectActions.kIdentifiers.PROJECTS_GET_END} when getting projects is done`, () => {
+    it(`creates ${ProjectActions.kIdentifiers.PROJECTS_GITHUB_END} when getting projects is done`, () => {
       fetchMock.postOnce('/api/accounts/register/', {
         body: {
           result: 'processing'
@@ -21,10 +21,10 @@ describe('Project Actions', () => {
       })
 
       const expectedActions = [{
-        type: ProjectActions.kIdentifiers.PROJECTS_GET_START
+        type: ProjectActions.kIdentifiers.PROJECTS_GITHUB_START
       },
       {
-        type: ProjectActions.kIdentifiers.PROJECTS_GET_END,
+        type: ProjectActions.kIdentifiers.PROJECTS_GITHUB_END,
         payload: []
       }]
       const store = mockStore(kDefaultState)
@@ -47,7 +47,7 @@ describe('Project Actions', () => {
       })
 
       const expectedActions = [{
-        type: ProjectActions.kIdentifiers.PROJECTS_GET_START
+        type: ProjectActions.kIdentifiers.PROJECTS_GITHUB_START
       },
       {
         type: ProjectActions.kIdentifiers.PROJECTS_FAILED,
