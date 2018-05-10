@@ -8,9 +8,20 @@ import cells from '../cells/'
 import './timeLine.style.css'
 import 'react-vertical-timeline-component/style.min.css'
 
+const kSort = {
+  ALL: 'ALL',
+  WORK: 'Work',
+  SCHOOL: 'School',
+  GITHUB: 'GitHub'
+}
+
 class TimeLine extends Component {
   constructor (props) {
     super(props)
+
+    this.state = {
+      sort: kSort.ALL
+    }
 
     this.cells = this.cells.bind(this)
   }
@@ -49,6 +60,13 @@ class TimeLine extends Component {
       .sort((a, b) => {
         return new Date(b.created_at) - new Date(a.created_at)
       })
+      .filter((item) => {
+        if (this.state.sort !== kSort.ALL) {
+          return item.location === this.state.sort
+        } else {
+          return true
+        }
+      })
       .map((item) => {
         let Cell = cells[item.location]
         return (
@@ -71,6 +89,19 @@ class TimeLine extends Component {
         <div className="row">
           <div className="col-12 text-center mt-3">
             <h2>Projects & Work History</h2>
+          </div>
+          <div className="col-12 text-center">
+            <div className="dropdown">
+              <button type="button" className="btn btn-white dropdown-toggle" data-toggle="dropdown">
+                {this.state.sort}
+              </button>
+              <div className="dropdown-menu">
+                <button className={`dropdown-item ${this.state.sort === kSort.ALL ? 'active' : ''}`} onClick={() => this.setState({sort: kSort.ALL})}>{kSort.ALL}</button>
+                <button className={`dropdown-item ${this.state.sort === kSort.WORK ? 'active' : ''}`} onClick={() => this.setState({sort: kSort.WORK})}>{kSort.WORK}</button>
+                <button className={`dropdown-item ${this.state.sort === kSort.SCHOOL ? 'active' : ''}`} onClick={() => this.setState({sort: kSort.SCHOOL})}>{kSort.SCHOOL}</button>
+                <button className={`dropdown-item ${this.state.sort === kSort.GITHUB ? 'active' : ''}`} onClick={() => this.setState({sort: kSort.GITHUB})}>{kSort.GITHUB}</button>
+              </div>
+            </div>
           </div>
         </div>
         <VerticalTimeline>
