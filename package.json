@@ -3,10 +3,9 @@
   "description": "Personal website portfolio of bolencki13",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://bolencki13.github.io/about.me",
+  "homepage": "https://bolencki13.github.io/about.me",
   "dependencies": {
     "bootstrap": "^4.1.1",
-    "history": "^4.7.2",
     "jquery": "^3.3.1",
     "moment": "^2.22.1",
     "node-sass-chokidar": "^1.2.2",
@@ -15,7 +14,6 @@
     "react-dom": "^16.3.2",
     "react-icons": "^2.2.7",
     "react-redux": "^5.0.7",
-    "react-router": "^4.2.0",
     "react-scripts": "1.1.4",
     "react-vertical-timeline-component": "^2.0.6",
     "redux": "^4.0.0",
@@ -33,7 +31,6 @@
     "sass:watch": "npm run sass && node-sass-chokidar src/ -o src/ --watch --recursive",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "devDependencies": {
     "eslint": "^4.11.0",
