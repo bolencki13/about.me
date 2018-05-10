@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import { isoToDate } from '../../services/timeService'
 import * as ProjectsActions from '../../redux/actions/projects/'
 import cells from '../cells/'
+import FloatingActions from '../floatingActions/'
 import './timeLine.style.css'
 import 'react-vertical-timeline-component/style.min.css'
 
@@ -99,8 +100,11 @@ class TimeLine extends Component {
     return (
       <section id="projects" className="container">
         <div className="row">
-          <div className="col-12 text-center mt-3">
+          <div className="col-8 offset-2 text-center mt-3">
             <h2>Projects & Work History</h2>
+          </div>
+          <div className="col-2 text-right mt-3">
+            <FloatingActions/>
           </div>
           <div className="col-12 text-center">
             <div className="dropdown">
@@ -121,6 +125,7 @@ class TimeLine extends Component {
             this.cells()
           }
         </VerticalTimeline>
+        <div id="projects-bottom"/>
       </section>
     )
   }

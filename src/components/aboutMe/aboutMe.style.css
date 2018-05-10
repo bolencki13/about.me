@@ -4,6 +4,9 @@
 img.rounded {
   border-radius: 50% !important; }
 
+.btn.rounded {
+  border-radius: 24px !important; }
+
 body {
   background-color: #f7f7f7; }
 

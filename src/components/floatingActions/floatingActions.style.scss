@@ -1,0 +1,37 @@
+@import '../../styles/base';
+
+.floating-action-fixed {
+  position: fixed !important;
+  top: 16px !important;
+  right: 10px !important;
+  z-index: 99;
+}
+
+.btn {
+  font-size: 12px;
+  height: 32px;
+  line-height: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 24px;
+  &:focus {
+    box-shadow: none;
+  }
+  &-green {
+    background-color: #40BC90;
+    box-shadow: 0px 2px 8px 0px rgba(64, 188, 144, 0.6);
+    color: #fff !important;
+    &:hover {
+      background-color: darken(#40BC90, 5%);
+    }
+  }
+  &-pink {
+    background-color: #DF6A6A;
+    box-shadow: 0px 2px 8px 0px rgba(223, 106, 106, 0.6);
+    color: #fff !important;
+    &:hover {
+      background-color: darken(#DF6A6A, 5%);
+    }
+  }
+}
